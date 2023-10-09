@@ -1,12 +1,6 @@
 import React from "react";
 import Logo from "../assets/Images/logo.png";
-import {
-  HiHome,
-  HiMagnifyingGlass,
-  HiStar,
-  HiPlayCircle,
-  HiTv,
-} from "react-icons/hi2";
+import { HiHome} from "react-icons/hi2";
 import { HiPlus, HiDotsVertical } from "react-icons/hi";
 import HeaderItem from "./HeaderItem";
 import Avatar from "../assets/Images/avatar.jpg";
@@ -19,26 +13,7 @@ function Header() {
       name: "HOME",
       icon: HiHome,
     },
-    {
-      name: "SEARCH",
-      icon: HiMagnifyingGlass,
-    },
-    {
-      name: "WATCH LIST",
-      icon: HiPlus,
-    },
-    {
-      name: "ORIGINALS",
-      icon: HiStar,
-    },
-    {
-      name: "MOVIES",
-      icon: HiPlayCircle,
-    },
-    {
-      name: "SERIES",
-      icon: HiTv,
-    },
+    
   ];
   return (
     <div className="flex items-center justify-between p-5">

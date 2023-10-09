@@ -1,8 +1,10 @@
-import React, { useEffect, useRef, useState } from 'react'
-import GlobalAPI from '../Services/GlobalAPI'
-const ImageBase="https://image.tmdb.org/t/p/original"
+import React, { useEffect, useRef, useState } from 'react';
+import GlobalAPI from '../Services/GlobalAPI';
 import { HiChevronLeft, HiChevronRight } from 'react-icons/hi2';
+
+
 const screenWidth=window.innerWidth;
+const ImageBase="https://image.tmdb.org/t/p/original";
 
 function Slider() {
     const [movieList, setMovieList] = useState([]);
@@ -31,8 +33,8 @@ function Slider() {
     
     <div className='flex overflow-x-auto w-full px-16 py-4 scrollbar-none scroll-smooth' ref={elementRef}>
         {movieList.map((item)=>(
-            <img src={ImageBase+item.backdrop_path} className='w-full md:h-[310px] object-left-top object-cover mr-5 rounded-md hover:border-[4px] border-gray-400 transition-all duration-100 ease-in-out'/>
-      
+            <img src={ImageBase+item.backdrop_path} className='w-full md:h-[410px] object-left-top object-cover mr-5 rounded-md hover:border-[4px] border-gray-400 transition-all duration-100 ease-in-out'/>
+            
         ))}
     </div>
     

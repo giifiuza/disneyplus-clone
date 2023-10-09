@@ -1,18 +1,16 @@
 import './App.css'
-import GenreMovieList from './Components/GenreMovieList'
-import Header from './Components/Header'
-import ProductionHouse from './Components/ProductionHouse'
-import Slider from './Components/Slider'
-
+import Home from './Pages/Home'
+import { Link } from "react-router-dom"
 function App() {
   
 
   return (
     <div className="">
-      <Header />
-      <Slider />
-      <ProductionHouse/>
-      <GenreMovieList />
+      <h2>
+        <Link to='/'>Movie</Link>
+      </h2>
+      
+      {/* <Home /> */}
     </div> 
     
   )
