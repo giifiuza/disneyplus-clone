@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+.container{
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto ;
+    padding-top: 3%;
+    font-family: 'Inter';
+    background-color: #06070c;
+    border-radius: 2rem;
+    margin-bottom: 10rem;
+    
+
+}
+
+.all{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.img{
+    width: 100%;
+    height: auto;
+    border-radius: 1rem;
+}
+
+@media (max-width: 800px) {
+    .all{
+        grid-template-columns: 1fr;
+    }
+}
+
+.title{
+    font-family: inter;
+    font-weight: 800;
+    color: rgb(240, 239, 239);
+    transition: 0.2s ease-in;
+}
+
+.title:hover{
+    color: rgb(160, 159, 159);
+}

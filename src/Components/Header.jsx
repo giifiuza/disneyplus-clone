@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigate } from "react-router-dom"
 import Logo from "../assets/Images/logo.png";
 import { HiHome} from "react-icons/hi2";
 import { HiPlus, HiDotsVertical } from "react-icons/hi";
@@ -15,6 +16,9 @@ function Header() {
     },
     
   ];
+
+  const navigate = useNavigate();
+
   return (
     <div className="flex items-center justify-between p-5">
       <div className="flex  gap-8 items-center">
@@ -31,7 +35,7 @@ function Header() {
         <div className="flex md:hidden gap-5">
           {menu.map(
             (item, index) =>
-              index < 3 && <HeaderItem name={""} Icon={item.icon} />
+              index < 3 && <HeaderItem name={""} Icon={item.icon} onClick={() =>{navigate('/')} }/>
           )}
           <div className="md:hidden" onClick={() => setToggle(!toggle)}>
             <HeaderItem name={""} Icon={HiDotsVertical} />
