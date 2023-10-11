@@ -36,7 +36,7 @@ function MoviePage() {
         <h2 className='text-white text-center text-4xl title'>{title}</h2>
         <div className='all'>
 
-          <img className='img' src={ImageBase + poster_path} />
+          <img className='poster' src={ImageBase + poster_path} />
           <div className='p-10'>
             <h1 className='font-bold text-white text-2xl mt-8'>Language</h1>
             <h2 className=' font-medium text-gray-400 text-xl'>{original_language}</h2>

@@ -20,14 +20,14 @@ function Header() {
   const navigate = useNavigate();
 
   return (
-    <div className="flex items-center justify-between p-5">
+    <div className="flex items-center justify-between p-5 bg-slate-800 mb-[50px]">
       <div className="flex  gap-8 items-center">
         <img
           src={Logo}
-          className="w-[80px] 
-        md:w-[115px] object-cover"
+          className="w-[100px] 
+        md:w-[130px] object-cover"
         />
-        <div className="hidden md:flex gap-8">
+        <div className="hidden md:flex">
           {menu.map((item) => (
             <HeaderItem name={item.name} Icon={item.icon} />
           ))}
